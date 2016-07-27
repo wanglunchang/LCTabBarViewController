@@ -16,7 +16,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    switch (self.tabBarController.selectedIndex) {
+        case 0:{
+            self.title = @"Main0";
+            self.view.backgroundColor = [UIColor orangeColor];
+        }
+            break;
+        case 1:{
+            self.title = @"Shop1";
+            self.view.backgroundColor = [UIColor yellowColor];
+        }
+            break;
+        case 2:{
+            self.title = @"Share2";
+            self.view.backgroundColor = [UIColor blueColor];
+        }
+            break;
+        case 3:{
+            self.title = @"More3";
+            self.view.backgroundColor = [UIColor redColor];
+        }
+            break;
+        case 4:{
+            self.title = @"Mine4";
+            self.view.backgroundColor = [UIColor magentaColor];
+        }
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

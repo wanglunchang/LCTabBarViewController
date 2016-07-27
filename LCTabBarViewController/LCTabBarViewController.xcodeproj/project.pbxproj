@@ -15,6 +15,10 @@
 		04C8C1DD1D48951E00CDA2BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C8C1DB1D48951E00CDA2BF /* LaunchScreen.storyboard */; };
 		04C8C1E81D48951E00CDA2BF /* LCTabBarViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8C1E71D48951E00CDA2BF /* LCTabBarViewControllerTests.m */; };
 		04C8C1F31D48951E00CDA2BF /* LCTabBarViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8C1F21D48951E00CDA2BF /* LCTabBarViewControllerUITests.m */; };
+		04C8C2081D4895F900CDA2BF /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8C2031D4895F900CDA2BF /* LCTabBarController.m */; };
+		04C8C2091D4895F900CDA2BF /* LCTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8C2051D4895F900CDA2BF /* LCTabBarView.m */; };
+		04C8C20A1D4895F900CDA2BF /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8C2071D4895F900CDA2BF /* TabBarViewController.m */; };
+		04C8C2101D48960A00CDA2BF /* tab.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04C8C20F1D48960A00CDA2BF /* tab.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		04C8C1EE1D48951E00CDA2BF /* LCTabBarViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCTabBarViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C8C1F21D48951E00CDA2BF /* LCTabBarViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCTabBarViewControllerUITests.m; sourceTree = "<group>"; };
 		04C8C1F41D48951E00CDA2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C8C2021D4895F900CDA2BF /* LCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarController.h; sourceTree = "<group>"; };
+		04C8C2031D4895F900CDA2BF /* LCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarController.m; sourceTree = "<group>"; };
+		04C8C2041D4895F900CDA2BF /* LCTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarView.h; sourceTree = "<group>"; };
+		04C8C2051D4895F900CDA2BF /* LCTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarView.m; sourceTree = "<group>"; };
+		04C8C2061D4895F900CDA2BF /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		04C8C2071D4895F900CDA2BF /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		04C8C20F1D48960A00CDA2BF /* tab.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tab.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +116,8 @@
 				04C8C1D11D48951E00CDA2BF /* AppDelegate.m */,
 				04C8C1D31D48951E00CDA2BF /* ViewController.h */,
 				04C8C1D41D48951E00CDA2BF /* ViewController.m */,
+				04C8C2001D4895F900CDA2BF /* TabBarControllers */,
+				04C8C20B1D48960100CDA2BF /* UI */,
 				04C8C1D61D48951E00CDA2BF /* Main.storyboard */,
 				04C8C1D91D48951E00CDA2BF /* Assets.xcassets */,
 				04C8C1DB1D48951E00CDA2BF /* LaunchScreen.storyboard */,
@@ -118,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				04C8C1CE1D48951E00CDA2BF /* main.m */,
+				04C8C20F1D48960A00CDA2BF /* tab.gif */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +152,58 @@
 				04C8C1F41D48951E00CDA2BF /* Info.plist */,
 			);
 			path = LCTabBarViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		04C8C2001D4895F900CDA2BF /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04C8C2011D4895F900CDA2BF /* TabBar */,
+				04C8C2061D4895F900CDA2BF /* TabBarViewController.h */,
+				04C8C2071D4895F900CDA2BF /* TabBarViewController.m */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		04C8C2011D4895F900CDA2BF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				04C8C2021D4895F900CDA2BF /* LCTabBarController.h */,
+				04C8C2031D4895F900CDA2BF /* LCTabBarController.m */,
+				04C8C2041D4895F900CDA2BF /* LCTabBarView.h */,
+				04C8C2051D4895F900CDA2BF /* LCTabBarView.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		04C8C20B1D48960100CDA2BF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				04C8C20C1D48960100CDA2BF /* Controllers */,
+				04C8C20D1D48960100CDA2BF /* TabBarControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		04C8C20C1D48960100CDA2BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04C8C20D1D48960100CDA2BF /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04C8C20E1D48960100CDA2BF /* TabBar */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		04C8C20E1D48960100CDA2BF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +311,7 @@
 			files = (
 				04C8C1DD1D48951E00CDA2BF /* LaunchScreen.storyboard in Resources */,
 				04C8C1DA1D48951E00CDA2BF /* Assets.xcassets in Resources */,
+				04C8C2101D48960A00CDA2BF /* tab.gif in Resources */,
 				04C8C1D81D48951E00CDA2BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +339,9 @@
 			files = (
 				04C8C1D51D48951E00CDA2BF /* ViewController.m in Sources */,
 				04C8C1D21D48951E00CDA2BF /* AppDelegate.m in Sources */,
+				04C8C2091D4895F900CDA2BF /* LCTabBarView.m in Sources */,
+				04C8C2081D4895F900CDA2BF /* LCTabBarController.m in Sources */,
+				04C8C20A1D4895F900CDA2BF /* TabBarViewController.m in Sources */,
 				04C8C1CF1D48951E00CDA2BF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
